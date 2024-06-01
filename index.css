@@ -6,6 +6,7 @@ body{
 }
 
 header{
+    
     position: sticky;
     top: 0%;
     display: flex;
@@ -137,8 +138,8 @@ header div:nth-child(2) p svg{
 
 .resturant-page section:nth-child(1){
     position: relative;
-    height: 180px;
-    width: 300px;
+    /* height: 180px;
+    width: 300px; */
 }
 
 .resturant-page section:nth-child(1) div:nth-child(2){
@@ -167,7 +168,7 @@ header div:nth-child(2) p svg{
 }
 
 .resturant-image::after {
-    border-radius: 24px;
+    border-radius: 0px 0px 24px 24px;
     content: "";
     position: absolute;
     /* z-index: 1; */
@@ -231,36 +232,28 @@ header div:nth-child(2) p svg{
 }
 
 .resturant-page-all-1{
-   
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    gap: 1.5rem;
     
 }
 
-.resturant-page-all-1 >div{
-    height: 80%;
-    padding: 0.2rem 1rem;
-    margin-right: 1rem;
-    width:20%;
-    margin-bottom: 1rem;
-}
+
 
 .resturant-page-all-1 section div p{
     white-space: nowrap;
-    /* bottom: -100px; */
-    /* font-size: 0.8rem; */
 
 }
 
 .resturant-page-all-1 .resturant-image {
-    height: 85%;
-    width: 85%;
+    
+    height: 150px;
+    width: 250px;
 }
 
 .resturant-page-all-1 div .resturant-image::after{
     
-    width: 85%;
+    width: 250px;
     /* bottom:24px ; */
 }
 
@@ -274,6 +267,7 @@ header div:nth-child(2) p svg{
 .options{
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
     
 }
 
