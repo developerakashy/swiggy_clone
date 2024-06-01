@@ -1,0 +1,363 @@
+body{
+    
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    box-shadow: 0px 1px 30px 0px rgb(238, 238, 238);
+    /* border-bottom: 1px solid ; */
+}
+
+header div{
+    display: flex;
+
+}
+
+header div:nth-child(1){
+    align-items: center;
+}
+
+header div p{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.7rem 0.7rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgb(86, 86, 86);
+    letter-spacing: 0.5px;
+    
+
+}
+
+header div:nth-child(2) p svg{
+    margin-right: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+
+
+#content{
+    position: relative;
+    margin: auto;
+    align-self: center;
+    max-width:75% ;
+    /* height: 100vh; */
+    background-color: rgb(255, 255, 255);
+}
+
+.arrow-svg{
+     transform: rotate(180deg);
+}
+
+.content-initial-1 svg{
+    height: 15px;
+    width: 15px;
+    margin: 0%;
+    padding: 0%;
+    fill: rgb(105, 105, 105);
+    stroke: black;
+}
+
+.content-initial-1 > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content-initial-1 h1{
+    font-size: 1.6rem;
+}
+
+.arrow-btn {
+    /* border: 1px solid; */
+    display: flex;
+    gap: 10px;
+}
+
+.arrow-btn div{
+    padding: 0.5rem;
+    background-color: rgba(86, 86, 86, 0.211);
+    border-radius: 50%;
+    /* border: 1px solid; */
+    height: 15px;
+}
+
+.images-initial-1{
+    margin-left: -1rem;
+    height: 180px;
+    margin-bottom: 2rem;
+    overflow: scroll;
+    display: flex;
+}
+
+.images-initial-1::-webkit-scrollbar {
+    display: none;
+}
+
+.images-initial-1 div{
+    padding: 0rem 1rem;
+    
+}
+
+.images-initial-1 img{
+    height: 180px;
+    width: 144px;
+    
+}
+
+
+
+
+
+
+.content-initial-2{
+    padding-top: 0.5rem;
+    border-top: 2px solid rgba(224, 224, 224, 0.826);
+    margin-bottom: 3rem;
+}
+
+
+.resturant-page-all{
+    display: flex;
+    overflow: scroll;
+    gap: 2.5rem;
+    padding-left: 1rem;
+    margin-left: -1rem;
+}
+
+.resturant-page section:nth-child(1){
+    position: relative;
+    height: 180px;
+    width: 300px;
+}
+
+.resturant-page section:nth-child(1) div:nth-child(2){
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.resturant-page section p{
+    margin: 0%;
+}
+
+
+
+.resturant-image{
+    background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    height: 180px;
+    width: 300px;
+}
+
+.resturant-image::after {
+    border-radius: 24px;
+    content: "";
+    position: absolute;
+    /* z-index: 1; */
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(0, 0, 0) 90%);
+    width: 100%;
+    height: 70px;
+  }
+
+
+.resturant-info{
+    padding: 1rem;
+}
+
+.resturant-info h1{
+    margin: 0%;
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.resturant-info h2 svg{
+    height: 24px;
+    width: 24px;
+    margin-right: 0.2rem;
+}
+
+.resturant-info h2{
+    margin: 0%;
+    color: rgb(89, 89, 89);
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.resturant-info h2 span{
+    margin: 0rem 0.5rem;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: rgb(89, 89, 89);
+}
+
+.resturant-info p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0%;
+    font-size: 1rem;
+    color: rgb(111, 111, 111);
+}
+
+.resturant-page-all::-webkit-scrollbar {
+    display: none;
+}
+
+.content-initial-3{
+    border-top: 2px solid rgba(224, 224, 224, 0.826);
+    margin-bottom: 1rem;
+}
+
+.resturant-page-all-1{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    
+}
+
+.resturant-page-all-1 >div{
+    height: 80%;
+    padding: 0.2rem 1rem;
+    margin-right: 1rem;
+    width:20%;
+    margin-bottom: 1rem;
+}
+
+.resturant-page-all-1 section div p{
+    white-space: nowrap;
+    /* bottom: -100px; */
+    /* font-size: 0.8rem; */
+
+}
+
+.resturant-page-all-1 .resturant-image {
+    height: 85%;
+    width: 85%;
+}
+
+.resturant-page-all-1 div .resturant-image::after{
+    
+    width: 85%;
+    /* bottom:24px ; */
+}
+
+.content-initial-3 >h1{
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.6rem;
+    margin: 0%;
+}
+
+.options{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.options p{
+    white-space: nowrap;
+    font-size: 0.9rem;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 1px 1px 30px 0px rgb(242, 242, 242);
+    border-radius: 24px;
+    padding: 0.6rem 0.8rem;
+
+}
+
+
+
+
+.content-initial-4{
+
+}
+
+.recommendation h1{
+    margin: 0%;
+    padding-top: 3rem;
+    font-size: 1.6rem;
+}
+
+.resturant-cities{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.resturant-cities p{
+    border:1px solid rgb(219, 219, 219);
+    padding: 1rem 2.2rem;
+    white-space: nowrap;
+    border-radius: 12px;
+    
+}
+
+.resturant-cities-near p{
+    /* justify-content: space-between; */
+    padding: 1rem 9.5rem;
+}
+
+
+.download h1{
+    width: 500px;
+    font-size: 1.8rem;
+    color: rgb(63, 63, 63);
+}
+
+.download{
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(241, 241, 241, 0.907);
+}
+
+.download img{
+    height: 70px;
+    margin-right: 0.5rem;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 1, 7);
+    color: white;
+    padding: 2rem 15rem;
+}
+
+footer h1{
+    font-size: 1.2rem;
+}
+
+footer p{
+    color: gray;
+}
+
+footer section:nth-child(3) div{
+    margin-bottom: 4rem;
+}
